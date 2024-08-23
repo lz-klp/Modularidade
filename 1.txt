@@ -1,0 +1,20 @@
+a) 
+A variável product está fora do escopo do procedimento triangleArea(), faltam ";" em duas linhas e o
+uso de base e height como varáveis globais não são a melhor forma de fazer o cálculo.
+o correto deveria ser:
+
+void triangleArea ();
+{
+    double product;
+    product = (base * height)/2;
+    printf(“Area: %d”, product);
+}
+
+
+b)
+a variavel "a" não necessita ser declarada, já que o argumento "a" já existe com o mesmo tipo
+o correto deveria ser:
+
+void foo (float a) {
+    printf("%f\n",a);
+}
